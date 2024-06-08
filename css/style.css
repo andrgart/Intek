@@ -58,6 +58,58 @@
     height: 327px;
 }
 
+
+@media(max-width:1550px) {
+    .pictures-layout img {
+        width: 495px;
+        height: 201px;
+    
+        border-radius: 5px;
+    }
+
+    .pl_upper-line div {
+        width: 240px;
+        height: 250px;
+
+        margin: 0 0 15px 0;
+    }
+
+    .pl_upper-line img {
+        width: 240px;
+        height: 250px;
+    }
+
+    .pl_upper-line div h2 {
+        font-size: 32px;
+    }
+}
+
+@media(max-width:1300px) {
+    .pictures-layout img {
+        width: 390px;
+        height: 176px;
+    
+        border-radius: 5px;
+    }
+
+    .pl_upper-line div {
+        width: 190px;
+        height: 176px;
+
+        margin: 0 0 10px 0;
+    }
+
+    .pl_upper-line img {
+        width: 190px;
+        height: 176px;
+    }
+
+    .pl_upper-line div h2 {
+        font-size: 24px;
+        margin: 60px 0 0 15px;
+    }
+}
+
 /*  blue button */
 .blue-btn {
     background-color: rgb(25, 77, 210);
@@ -557,13 +609,9 @@
     color: black;
 }
 
-.how-we-work-reg button {
+.how-we-work-btn {
     width: 236px;
     height: 60px;
-
-    background-color: rgb(25, 77, 210);
-    border: none;
-    border-radius: 30px;
 
     font-size: 18px;
     font-weight: 300;
@@ -577,14 +625,111 @@
     transition: 0.3s ease-in-out background-color;
 }
 
-.how-we-work-reg button:hover {
-    background-color: rgb(13, 57, 167);
 
-    transition: 0.3s ease-in-out background-color;
+@media(max-width:1550px) {
+    .how-we-work-block {
+        display: flex;
+        justify-content: center;
+    }
+
+    .how-we-work-reg {
+        width: 700px;
+    }
+
+    .how-we-work-reg h1 {
+        font-size: 36px;
+        margin: 80px 0 30px 80px;
+    }
+
+    .how-we-work-reg p {
+        margin-right: 40px;
+        margin: 0 0 0 80px;
+    }
+
+    .how-we-work-btn {
+        width: 210px;
+        height: 50px;
+
+        margin: 0 0 0 80px;
+    }
 }
 
-/*  how we work cards  */
-.how-we-work-cards {
+@media(max-width:1300px) {
+    .how-we-work-reg {
+        width: 600px;
+    }
+
+    .how-we-work-reg h1 {
+        font-size: 30px;
+        margin: 50px 0 26px 60px;
+    }
+
+    .how-we-work-reg p {
+        margin-right: 40px;
+        margin: 0 0 0 60px;
+
+        font-size: 16px;
+    }
+
+    .how-we-work-btn {
+        margin: 0 0 0 60px;
+    }
+}
+
+@media(max-width:1020px) {
+    .how-we-work-main_div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .how-we-work-block {
+        width: 620px;
+        flex-direction: column;
+    }
+
+    .how-we-work-pl {
+        display: none;
+    }
+
+    .how-we-work-reg {
+        height: 340px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .how-we-work-reg h1 {
+        margin: 0 0 26px 0;
+
+        text-align: center;
+    }
+
+    .how-we-work-btn {
+        margin: 0;
+    }
+} 
+
+@media(max-width:630px) {
+    .how-we-work-reg {
+        max-width: 320px;
+        height: 380px;
+    }
+
+    .how-we-work-reg h1 {
+        font-size: 26px;
+    }
+
+    .how-we-work-reg p {
+        width: 320px;
+        font-size: 14px;
+        margin: 0;
+    }
+}
+
+/*  how we work cards  */ 
+.how-we-work-cards_inner {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -629,6 +774,297 @@
     font-size: 18px;
     font-weight: 600;
     line-height: 140%;
+}
+
+/*  we work slider  */
+.how-we-work-slider {
+    width: 200px;
+
+    margin: 20px 0 0 0;
+
+    display: none;
+    justify-content: space-between;
+}
+
+.how-we-work-control-l {
+    width: 50px;
+    height: 50px;
+
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.3);
+    /* border: 2px solid gray; */
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: 0.3s box-shadow ease-in-out,
+                0.3s background-color ease-in-out;
+}
+
+.how-we-work-control-l:hover {
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
+    transition: 0.3s box-shadow ease-in-out,
+                0.3s background-color ease-in-out;
+}
+
+.how-we-work-control-l img {
+    transform: rotate(90deg);
+    user-select: none;
+}
+
+.how-we-work-control-r {
+    width: 50px;
+    height: 50px;
+
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.3);
+    /* border: 2px solid gray; */
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: 0.3s box-shadow ease-in-out,
+                0.3s background-color ease-in-out;
+}
+
+.how-we-work-control-r:hover {
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
+    transition: 0.3s box-shadow ease-in-out,
+                0.3s background-color ease-in-out;
+}
+
+.how-we-work-control-r img {
+    transform: rotate(-90deg);
+    user-select: none;
+}
+
+.disabled-slider-btn {
+    background-color: rgb(231, 231, 231);
+
+    transition: 0.3s background-color ease-in-out;;
+}
+
+@media(max-width:1550px) {
+    .how-we-work-main_div {
+        width: 1195px;
+    }
+
+    .how-we-work-card {
+        width: 380px;
+        height: 320px;
+
+        padding-top: 40px;
+        padding-left: 26px;
+        padding-right: 20px;
+    }
+
+    .how-we-work-card-upper-line {
+        margin-bottom: 20px;
+    }
+
+    .how-we-work-card-upper-line img {
+        width: 40px;
+        height: 38px;
+    }
+
+    .how-we-work-card-upper-line div {
+        height: 38px;
+    }
+
+    .how-we-work-card-upper-line div h2 {
+        font-size: 16px;
+        line-height: 140%;
+    }
+}
+
+@media(max-width:1300px) {
+    .how-we-work-main_div {
+        max-width: 990px;
+
+        margin: 50px auto 80px auto;
+    }
+
+    .how-we-work-cards_inner { 
+        margin: 80px 0 0 0;
+    }
+
+    .how-we-work-card {
+        width: 310px;
+        height: 280px;
+        padding-top: 24px;
+        padding-left: 18px;
+        padding-right: 14px;
+    }
+
+    .how-we-work-card-upper-line {
+        height: 28px;
+    }
+
+    .how-we-work-card-upper-line img {
+        width: 34px;
+        height: 28px;
+    }
+
+    .how-we-work-card-upper-line div {
+        height: 28px;
+    }
+
+    .how-we-work-card-upper-line div h2 {
+        font-size: 14px;
+        line-height: 120%;
+    }
+
+    .how-we-work-card p {
+        font-size: 16px;
+        line-height: 140%;
+    }
+}
+
+@media(max-width:1020px) {
+    .how-we-work-main_div {
+        width: 620px;
+    }
+
+    .how-we-work-cards {
+        width: 473px;
+        height: 408px;
+
+        /* border: 2px solid gray; */
+        margin-top: 65px;
+
+        box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.3);
+        overflow: hidden;
+
+        position: relative;
+    }
+
+    .how-we-work-cards_inner {
+        margin: 0;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        transition: 0.3s left ease-in-out;
+    }
+
+    .slider_part_two {
+        left: -473px;
+        transition: 0.3s left ease-in-out;
+    }
+
+    .slider_part_three {
+        left: -946px;
+        transition: 0.3s left ease-in-out;
+    }
+
+    .how-we-work-slider {
+        display: flex;
+    }
+
+    .how-we-work-card {
+        width: 473px;
+        height: 408px;
+
+        padding-top: 65px;
+        padding-left: 39px;
+        padding-right: 39px;
+
+        margin-bottom: 20px;
+
+        box-shadow: none;
+    }
+
+    .how-we-work-card-upper-line {
+        margin-bottom: 42px;
+    }
+
+    .how-we-work-card-upper-line img {
+        width: 49px;
+        height: 45px;
+    }
+
+    .how-we-work-card-upper-line div {
+        height: 45px;
+    }
+
+    .how-we-work-card-upper-line div h2 {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 140%;
+    }
+
+    .how-we-work-card p {
+        font-size: 18px;
+        line-height: 150%;
+    }
+}
+
+@media(max-width: 630px) {
+    .how-we-work-main_div {
+        max-width: 320px;
+        margin: 40px auto 30px auto;
+    }
+
+    .how-we-work-block {
+        max-width: 320px;
+    }
+
+    .how-we-work-reg p {
+        text-align:center;
+    }
+
+    /* cards */
+    .how-we-work-card {
+        width: 320px;
+        height: 290px;
+
+        padding-top: 26px;
+        padding-left: 20px;
+        padding-right: 16px;
+
+        box-shadow: none;
+    }
+
+    .how-we-work-card-upper-line {
+        margin-bottom: 32px;
+    }
+
+    .how-we-work-card-upper-line img {
+        width: 36px;
+        height: 34px;
+    }
+
+    .how-we-work-card-upper-line div {
+        height: 34px;
+    }
+
+    .how-we-work-card-upper-line div h2 {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 120%;
+    }
+
+    .how-we-work-card p {
+        font-size: 16px;
+        line-height: 140%;
+    }
+
+    /* slider*/
+    .how-we-work-cards {
+        width: 320px;
+        height: 290px;
+    }
+
+    .slider_part_two {
+        left: -320px;
+    }
+
+    .slider_part_three {
+        left: -640px;
+    }
 }
 
 /*  investment section  */
