@@ -2837,6 +2837,10 @@
     text-decoration: none;
 }
 
+.nav-con-block a:hover {
+    text-decoration: underline;
+}
+
 @media (max-width: 1550px) {
     .footer {
         padding-top: 122px;
@@ -2863,13 +2867,40 @@
 
 @media (max-width: 1030px) {
     .footer {
-        height: 1000px;
+        height: 940px;
         flex-direction: column;
         align-items: center;
+
+        padding-top: 80px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     .footer p {
-        width: 320px;
+        width: 280px;
+
+        font-size: 16px;
+        line-height: 140%;
+
+        margin: 0 20px 0;
         text-align: center;
+    }
+
+    .nav-con-block {
+        max-width: 300px;
+    }
+
+    .nav-con-block div {
+        width: 300px;
+    }
+
+    .nav-con-block h2 {
+        font-size: 28px;
+        margin-bottom: 22px;
+        padding-bottom: 22px;
+    }
+
+    .nav-con-block a {
+        font-size: 14px;
     }
 }
