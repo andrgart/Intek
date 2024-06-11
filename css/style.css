@@ -2772,6 +2772,8 @@
     line-height: 150%;
     letter-spacing: 1px;
     color: white;
+
+    margin: 0 20px 0 0;
 }
 
 .nav-con-block {
@@ -2833,4 +2835,41 @@
     color: white;
 
     text-decoration: none;
+}
+
+@media (max-width: 1550px) {
+    .footer {
+        padding-top: 122px;
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+
+    .nav-con-block {
+        width: 700px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .footer {
+        height: 820px;
+        padding-bottom: 40px;
+    }
+
+    .nav-con-block {
+        flex-direction: column;
+        max-width: 320px;
+    }
+}
+
+@media (max-width: 1030px) {
+    .footer {
+        height: 1000px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer p {
+        width: 320px;
+        text-align: center;
+    }
 }
